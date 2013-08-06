@@ -1,0 +1,28 @@
+{
+	"name": "clevis/orm-installer",
+	"type": "composer-installer",
+	"description": "Installer for Clevis/Orm",
+	"homepage": "http://clevis.cz",
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Clevis s.r.o.",
+			"homepage": "http://clevis.cz"
+		}
+	],
+
+	"require": {
+		"php": ">= 5.3.7"
+	},
+	"require-dev": {
+		"nette/tester": "@dev",
+		"composer/composer": "@dev"
+	},
+
+	"autoload": {
+		"psr-0": { "Clevis\\Orm\\": "src/" }
+	},
+	"extra": {
+		"class": "Clevis\\Orm\\OrmInstaller"
+	}
+}
