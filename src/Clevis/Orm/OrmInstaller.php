@@ -41,6 +41,7 @@ class OrmInstaller extends LibraryInstaller
 		parent::update($repo, $initial, $target);
 
 		$installDir = $this->getPackageBasePath($target);
+		$this->filesystem->removeDirectory($installDir . '/Builder/libs');
 		$this->filesystem->removeDirectory($installDir . '/tests/libs');
 	}
 
